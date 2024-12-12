@@ -25,3 +25,10 @@ y_pred = knn.predict(X_test)
 # Generate the confusion matrix and classification report
 print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))
+
+
+# Import roc_auc_score
+from sklearn.metrics import roc_auc_score
+
+# Calculate roc_auc_score
+print(roc_auc_score(y_test, y_pred))
