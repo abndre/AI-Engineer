@@ -10,7 +10,7 @@ activate:
 	conda activate $(ENV_NAME)
 
 install:
-	conda activate $(ENV_NAME) && pip install transformers torch
+	conda activate $(ENV_NAME) && pip install transformers torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 run:
 	conda activate $(ENV_NAME) && python sentiment_analysis.py
