@@ -1,3 +1,4 @@
+print("===== parte 1 ======")
 input_string = 'HOWDY, how aré yoü?'
 # Import the AutoTokenizer
 from transformers import AutoTokenizer, GPT2Tokenizer, DistilBertTokenizer
